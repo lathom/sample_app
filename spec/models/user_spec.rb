@@ -109,7 +109,8 @@ describe User do
       it "should be false if the passwords don't match" do
         @user.has_password?("invalid").should be_false
       end 
-
+    end
+    
     describe "authenticate method" do
 
       it "should return nil on email/password mismatch" do
